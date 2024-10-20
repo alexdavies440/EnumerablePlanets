@@ -16,6 +16,7 @@ public class PlanetController {
         // This method is commonly used in combination with the for-each construct
         // to iterate over the values of an enum type.
         // Here you are naming that array "planets"
+        model.addAttribute("title", "Pick a planet (test)");
         model.addAttribute("planets", Planets.values());
         return "index";
     }
