@@ -1,9 +1,13 @@
 package org.launchcode.controllers;
 
 import org.launchcode.data.Planets;
+import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.Collection;
 
 @Controller
 public class PlanetController {
@@ -16,8 +20,8 @@ public class PlanetController {
         // This method is commonly used in combination with the for-each construct
         // to iterate over the values of an enum type.
         // Here you are naming that array "planets"
-        model.addAttribute("title", "Pick a planet (test)");
-        model.addAttribute("planets", Planets.values());
+
+        model.addAttribute("title", "Test");
         return "index";
     }
 }
