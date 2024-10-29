@@ -1,12 +1,8 @@
-package org.launchcode.controllers;
+package org.launchcode.enumerableplanets.controllers;
 
-import org.launchcode.data.Planets;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.Collection;
 
 @Controller
 public class PlanetController {
@@ -20,7 +16,7 @@ public class PlanetController {
         // to iterate over the values of an enum type.
         // Here you are naming that array "planets"
 
-        model.addAttribute("title", "Test");
+        model.addAttribute("title", "Test!");
         return "index";
     }
 }
